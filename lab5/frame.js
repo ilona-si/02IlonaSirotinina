@@ -5,6 +5,10 @@ var DOM = {
 	}, 
 	 append: function (el, target) {
 	 	target.parentNode.insertBefore(el, target.nextSibling)
+	 	//- добавляет элемент el после элемента target 
+	 },
+	 append2: function (el, target) {
+	 	target.insertBefore(el, target.lastChild)
 	 	//- добавляет элемент el в конец эл-та target 
 	 },
 	 replace: function (el, target) {
@@ -34,9 +38,9 @@ var p = document.getElementById('p');
 var h1 = document.createElement('h1');
 var h2 = document.createElement('h2');
 var h3 = document.createElement('h3');
-
+var div1 = document.getElementById('div1');
 DOM.remove(footer);
-DOM.append(h1,p);
+DOM.append2(h1,div1);
 DOM.replace(h2,h1);
 DOM.prepend(h3,ul);
 DOM.copy(ul,body);
