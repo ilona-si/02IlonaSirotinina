@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+
+
+<div class="my-flex-container">
+	<div id="input"></div>
+	<button type="button" value="" name="bin" class="systems" >binary</button>
+	<button type="button" value="" name="reverse" class="systems">1/x</button>
+	<button type="button" value="^2" name="square" class="op">x<sup>2</sup></button>
+	<button type="button" value="^3" name="cube" class="op" >x<sup>3</sup></button>
+	<button type="button" value="" class="reset">C</button>
+	<button type="button" value="/" name="/" class="op" >/</button>
+	<button type="button" value="*" name="*" class="op" >*</button>
+	
+	<button type="button" value="" name="oct"  class="systems" >octal</button>
+	<button type="button" value="^1/" name="sqrt" class="op"><sup>y</sup>&#8730;x</button>
+	<button type="button" value="^" name="pow" class="op">x<sup>y</sup></button>
+	<button type="button" value="7" name="7">7</button>
+	<button type="button" value="8" name="8">8</button>
+	<button type="button" value="9" name="9">9</button>
+	<button type="button" value="-" name="-" class="op" >-</button>
+
+	<button type="button" value="" name="sixteen" class="systems">hex</button>
+	<button type="button" value="div" name="div" class="op">div</button>
+	<button type="button" value="mod" name="mod" class="op">mod</button>
+	<button type="button" value="4" name="4">4</button>
+	<button type="button" value="5" name="5">5</button>
+	<button type="button" value="6" name="6">6</button>
+	<button type="button" value="+" name="+" class="op">+</button>
+
+	<button type="button" value="" name="sin" class="trig">sin(x)</button>
+	<button type="button" value="" name="cos" class="trig">cos(x)</button>
+	<button type="button" value="" name="tan" class="trig">tan(x)</button>
+	<button type="button" value="1" name="1">1</button>
+	<button type="button" value="2" name="2">2</button>
+	<button type="button" value="3" name="3">3</button>
+	<button type="button" value="ln2" name="ln2">ln(2)</button>
+
+	<button type="button" value="" name="cot" class="trig">cot(x)</button>
+	<button type="button" value="по основанию" name="log" class="op">log<sub>x</sub>y</button>
+	<button type="button" value="&#960;" name="&#960;">&#960;</button>
+	<button type="button" value="e" name="e">e</button>
+	<button type="button" value="0" name="0">0</button>
+	<button type="button" value="." name=".">,</button>
+	<button type="button" class="rez">=</button>
+</div>
+
+<div id="rules">
+	Правила:<br>
+	1)Чтобы воспользоваться тригонометрическими функциями, сначала необходимо написать число (угол в градусах), а затем кликнуть на необходимую функцию.<br>
+	1)Чтобы воспользоваться функцией логарифма, сначала необходимо написать число, от которого берется логарифм (y), затем кликнуть на  функцию  выбрать основание(ч).<br>
+	1)Чтобы воспользоваться любыми функциями, сначала необходимо написать число, а затем кликнуть на необходимую функцию.<br>
+</div>
+<script type="text/javascript" src ="js/view.js"></script>
+</script>
+</body>
+</html>
